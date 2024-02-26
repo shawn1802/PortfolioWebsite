@@ -9993,7 +9993,7 @@ h6,
 }
 .experience-item {
   opacity: 0; /* Initially hide the items */
-  transition: opacity 0.8s ease; /* Apply transition effect */
+  transition: opacity 0.6s ease; /* Apply transition effect */
 }
 
 .experience-item.reveal {
@@ -10015,6 +10015,19 @@ h6,
 
 .tooltip-text {
   font-size: 14px;
+}
+#dineder-image-container {
+  width: 100%;
+    height: auto; /* Change height to auto to allow images to expand vertically */
+    max-height: 300px; /* Set a maximum height for the container */
+    overflow: hidden;
+}
+
+#gallery-image {
+  max-width: 100%;
+  max-height: auto;
+  display: block;
+  margin: auto;
 }
 
 #dineder-image-container:hover .tooltip {

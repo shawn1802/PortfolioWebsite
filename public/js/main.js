@@ -160,3 +160,13 @@ function opentab(tabname, event) {
   document.getElementById(tabname).classList.add("active-tab");
 }
 
+let imageIndex = 0;
+const images = ["img/dineder.png", "img/Dineder Screenshot 1.png", "img/Dineder Screenshot 2.png"]; // Add the URLs of your images here
+
+function changeImage() {
+    imageIndex = (imageIndex + 1) % images.length;
+    document.getElementById('gallery-image').src = images[imageIndex];
+}
+
+// Change image every 3 seconds (3000 milliseconds)
+setInterval(changeImage, 2000);
