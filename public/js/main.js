@@ -149,7 +149,7 @@
 // makes skills-tab functional
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
-function opentab(tabname) {
+function opentab(tabname, event) {
   for (tablink of tablinks) {
     tablink.classList.remove("active-link");
   }
